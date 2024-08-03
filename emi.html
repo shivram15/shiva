@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        .input-group label {
+            margin-right: 10px;
+        }
+        .input-group input {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>EMI Calculator</h1>
+    <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <button onclick="addCustomer()">Add Customer</button>
+    </div>
+    <div id="customerTable"></div>
+
+    <script src="emi.js"></script>
+</body>
+</html>
